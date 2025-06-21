@@ -1,11 +1,11 @@
 {
-  "name": "STP_9555",
+  "name": "stp-9555",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/STP-9555/",
+    "build": "vite build --base=/stp-9555/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview"
   },
