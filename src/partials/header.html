@@ -1,17 +1,23 @@
 <header class="header">
   <div class="container">
-    <nav>
-      <a href="#"><img src="/src/img/favicon.webp" alt="game-icon" /></a>
+    <nav class="header-nav">
+      <a href="#"
+        ><img
+          class="header-logo-img"
+          src="../img/webp/logo-icon.webp"
+          alt="game-icon"
+      /></a>
       <ul class="nav-list">
         <li class="nav-item"><a href="#welcome">Welcome</a></li>
         <li class="nav-item">
           <a href="#about-game" class="dropdown-toggle">
-            About &#9660;
+            About
+            <!-- &#9660; -->
             <svg class="icon-down" width="24" height="24">
-              <use href="/src/img/sprite.svg#icon-down"></use>
+              <use href="../img/sprite.svg#icon-down"></use>
             </svg>
           </a>
-          <div class="dropdown-menu">
+          <div class="dropdown-menu hidden">
             <ul>
               <li><a href="#storyline">Storyline</a></li>
               <li><a href="#gameplay">Gameplay</a></li>
@@ -27,8 +33,7 @@
         <li class="nav-item"><a href="#fan-content">Fan Content</a></li>
         <li class="nav-item"><a href="#contact">Contact</a></li>
       </ul>
-      <a href="#download" class="btn btn-primary">Download</a>
-      <button class="burger-btn" type="button" data-menu-open>
+      <button class="burger-btn hidden" type="button" data-menu-open>
         <svg class="burger-icon" width="32" height="32">
           <use href="./img/sprite.svg#icon-menu"></use>
         </svg>

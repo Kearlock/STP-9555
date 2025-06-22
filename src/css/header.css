@@ -1,0 +1,29 @@
+.header {
+  background-color: #0891b2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo-img {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.nav-list {
+  display: flex;
+  font-weight: 400;
+  font-size: 24px;
+  gap: 28px;
+  padding: 0;
+  margin: 0;
+}
