@@ -1,0 +1,16 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-back" viewBox="0 0 32 32">
+<path d="M21.413 28.728c0.375-0.375 0.585-0.884 0.585-1.414s-0.211-1.039-0.585-1.414l-9.9-9.9 9.9-9.9c0.364-0.377 0.566-0.882 0.561-1.407s-0.215-1.026-0.586-1.397-0.872-0.581-1.397-0.586c-0.524-0.005-1.030 0.197-1.407 0.561l-11.314 11.314c-0.375 0.375-0.586 0.884-0.586 1.414s0.211 1.039 0.586 1.414l11.314 11.314c0.375 0.375 0.884 0.585 1.414 0.585s1.039-0.211 1.414-0.585z"></path>
+</symbol>
+<symbol id="icon-menu" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M4 8h24M4 16h24M4 24h24"></path>
+</symbol>
+<symbol id="icon-close" viewBox="0 0 32 32">
+<path d="M28.721 31.56l-12.72-12.74-12.72 12.74-2.84-2.84 12.74-12.72-12.74-12.72 2.84-2.84 12.72 12.74 12.72-12.72 2.82 2.82-12.72 12.72 12.72 12.72-2.82 2.84z"></path>
+</symbol>
+<symbol id="icon-down" viewBox="0 0 59 32">
+<path d="M26.413 30.728l-26.413-24.583 6.602-6.145 23.112 21.511 23.112-21.511 6.602 6.145-26.413 24.583c-0.876 0.815-2.063 1.272-3.301 1.272s-2.425-0.458-3.301-1.272z"></path>
+</symbol>
+</defs>
+</svg>
