@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/STP-9555/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/stp-9555/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enchanted Fun Mania</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,8 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Rakkas&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/STP-9555/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-9555/assets/styles-3tyigqf0.css">
+    <script type="module" crossorigin src="/stp-9555/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/stp-9555/assets/styles-Blq71U-p.css">
   </head>
   <body>
     <header class="header">
@@ -20,7 +20,33 @@
     
   </div>
 </header>
-    
+    <div class="mob-menu-backdrop hidden">
+    <div class="mob-menu-header">
+        <a href="#" class="mob-menu-logo" aria-label="Home">
+            <img src="/img/mob-logo.webp" alt="Mobile menu logo">
+        </a>
+        <button class="mob-menu-close" aria-label="close menu">
+            <svg class="mob-menu-close-icon" width="24" height="24" >
+                <use href="/stp-9555/assets/sprite-E8vg0sBb.svg#icon-close">X</use>
+            </svg>
+        </button>
+        <nav class="mob-menu-nav">
+            <ul>
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#storyline">Storyline</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
+                <li><a href="#bonus-chapter">Bonus Chapter</a></li>
+                <li><a href="#collectibles">Collectibles</a></li>
+                <li><a href="#replayability">Replayability</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#hints">Hints</a></li>
+                <li><a href="#offline-mode">Offline Mode</a></li>
+                <li><a href="#fan-content">Fan Content</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
 
     <main>
       <section class="welcome">
@@ -390,13 +416,25 @@
   </div>
 </footer>
 
-    <div id="cookie-banner">
-  <p>
-    We use cookies to improve your experience on our website. By browsing this
-    website, you agree to our use of cookies
-  </p>
-  <button id="accept-btn">ACCEPT COOKIES</button>
-  <button id="decline-btn">DECLINE COOKIES</button>
+    <div class="cookies-backdrop hidden">
+  <div class="cookies-modal-content">
+    <p class="cookies-banner">
+      We use cookies to improve your experience on our website. By browsing this
+      website, you agree to our use of cookies.
+    </p>
+    <ul class="cookies-btns">
+      <li>
+        <button class="cookies-accept-btn" aria-label="accept cookies">
+          Accept Cookies
+        </button>
+      </li>
+      <li>
+        <button class="cookies-decline-btn" aria-label="decline cookies">
+          Decline Cookies
+        </button>
+      </li>
+    </ul>
+  </div>
 </div>
 
   </body>
