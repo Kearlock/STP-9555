@@ -1,0 +1,128 @@
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --second-family: 'Rakkas', cursive;
+  --text: #ffffff;
+}
+
+.privacy {
+  background-color: #0e7490;
+  color: var(--text);
+  padding: 32px 16px;
+}
+
+.privacy-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text);
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.top-link:hover {
+  text-decoration: underline;
+}
+
+.privacy h1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.privacy h2 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--text);
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+.privacy p strong {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.privacy p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.privacy ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.privacy li {
+  margin-bottom: 8px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.go-home-button {
+  border: 1px solid #c39325;
+  border-radius: 20px;
+  padding: 20px 24px;
+  width: 288px;
+  height: 64px;
+  background-color: #0891b2;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text);
+  text-align: center;
+  display: block;
+  margin: 32px auto 0;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.go-home-button:hover {
+  background-color: #0e7490;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .privacy-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+  }
+
+  .privacy h1 {
+    font-size: 28px;
+  }
+
+  .privacy h2 {
+    font-size: 20px;
+  }
+
+  .privacy p,
+  .privacy li,
+  .privacy p strong {
+    font-size: 16px;
+  }
+
+  .go-home-button {
+    width: 179px;
+    height: 70px;
+    padding: 20px 24px;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+}
