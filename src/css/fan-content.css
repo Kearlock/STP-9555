@@ -1,0 +1,134 @@
+.fan {
+  background-color: #0e7490;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 24px 16px;
+}
+
+.fan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+}
+
+.fan-container img[alt='Golden Crown'] {
+  width: 118px;
+  height: 31px;
+  transform: rotate(-180deg);
+  margin-bottom: -8px;
+  position: relative;
+  z-index: 2;
+}
+
+.fan-container h2 {
+  width: 206px;
+  height: 65px;
+  background-color: #0891b2;
+  border: 2px solid #c39325;
+  border-radius: 60px;
+  font-family: 'Rakkas', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-top: -24px;
+}
+
+.fan-container h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.fan-container > div:nth-child(2) p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  text-align: center;
+  color: #fff;
+}
+
+.fan-container img[alt='Game scene on phone'] {
+  width: 288px;
+  height: 159px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.fan-container > div:last-child p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  text-align: center;
+  color: #fff;
+}
+@media (min-width: 1024px) {
+  .fan {
+    padding: 64px 80px;
+  }
+
+  .fan-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .fan-container > div:first-child {
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .fan-container h2 {
+    width: 280px;
+    height: 80px;
+    font-size: 28px;
+    margin-top: -16px;
+  }
+
+  .fan-container h3 {
+    font-size: 20px;
+    text-align: left;
+    max-width: 600px;
+  }
+
+  .fan-container img[alt='Golden Crown'] {
+    width: 140px;
+    height: auto;
+  }
+
+  .fan-container > div:nth-child(2),
+  .fan-container > div:nth-child(3),
+  .fan-container > div:last-child {
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .fan-container > div:nth-child(2) p,
+  .fan-container > div:last-child p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  .fan-container img[alt='Game scene on phone'] {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+}

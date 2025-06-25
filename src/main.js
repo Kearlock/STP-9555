@@ -1,1 +1,2 @@
-import './js/burgerMenu';
+import './js/cookies.js';
+import './js/burgerMenu.js';

@@ -1,0 +1,141 @@
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --second-family: 'Rakkas', cursive;
+  --text: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: #0e7490;
+  color: var(--text);
+}
+
+.container {
+  padding: 32px 16px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.home-link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.timestamp {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.info-email {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.tc-list-item-header {
+  font-size: 18px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.go-to-home-btn {
+  border: 1px solid #c39325;
+  border-radius: 20px;
+  padding: 20px 24px;
+  width: 288px;
+  height: 64px;
+  background-color: #0891b2;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  margin: 40px auto 0;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.go-to-home-btn a {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.go-to-home-btn:hover {
+  background-color: #0e7490;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 48px 64px;
+  }
+
+  .main-title {
+    font-size: 28px;
+  }
+
+  .timestamp {
+    font-size: 16px;
+  }
+
+  p,
+  ul li {
+    font-size: 16px;
+  }
+
+  .tc-list-item-header {
+    font-size: 20px;
+  }
+
+  .go-to-home-btn {
+    width: 179px;
+    height: 70px;
+    font-size: 18px;
+  }
+}

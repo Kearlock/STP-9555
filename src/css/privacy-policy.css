@@ -42,13 +42,15 @@
   font-size: 18px;
   color: var(--text);
   margin-top: 28px;
+
   margin-bottom: 12px;
 }
 
 .privacy p strong {
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 14px;
+
+  font-size: 16px;
   color: var(--text);
 }
 
@@ -87,6 +89,7 @@
   text-align: center;
   display: block;
   margin: 32px auto 0;
+
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
