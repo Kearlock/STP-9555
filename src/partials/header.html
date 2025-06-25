@@ -9,16 +9,19 @@
       /></a>
       <ul class="nav-list">
         <li class="nav-item"><a href="#welcome">Welcome</a></li>
-        <li class="nav-item">
-          <a href="#about-game" class="dropdown-toggle">
-            About
-            <!-- &#9660; -->
-            <svg class="icon-down" width="24" height="24">
-              <use href="../img/sprite.svg#icon-down"></use>
+        <li class="nav-item dropdown-toggle">
+          <a>
+            About<svg class="icon-down icon" width="24" height="24">
+              <use href="/img/sprite.svg#icon-down"></use>
             </svg>
           </a>
-          <div class="dropdown-menu hidden">
+          <div class="dropdown-menu">
             <ul>
+              <img
+                class="drop-ornament-img-top"
+                src="../img/webp/ornament-top@2x.webp"
+                alt="Ornament"
+              />
               <li><a href="#storyline">Storyline</a></li>
               <li><a href="#gameplay">Gameplay</a></li>
               <li><a href="#bonus-chapter">Bonus Chapter</a></li>
@@ -27,17 +30,22 @@
               <li><a href="#design">Design</a></li>
               <li><a href="#hints">Hints</a></li>
             </ul>
+            <img
+              class="drop-ornament-img-bottom"
+              src="../img/webp/ornament-bottom@2x.webp"
+              alt="Ornament"
+            />
           </div>
         </li>
         <li class="nav-item"><a href="#offline-mode">Offline Mode</a></li>
         <li class="nav-item"><a href="#fan-content">Fan Content</a></li>
         <li class="nav-item"><a href="#contact">Contact</a></li>
       </ul>
-      <button class="burger-btn hidden" type="button" data-menu-open>
-        <svg class="burger-icon" width="32" height="32">
-          <use href="./img/sprite.svg#icon-menu"></use>
+      <a class="burger-btn" type="button" data-action="open">
+        <svg class="burger-icon icon" width="32" height="32">
+          <use href="../img/sprite.svg#icon-burger"></use>
         </svg>
-      </button>
+      </a>
     </nav>
   </div>
 </header>
