@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/STP-9555/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enchanted Fun Mania</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -192,37 +192,31 @@
 </section>
 
       <section class="gameplay">
-  <div class="gameplay-container">
-    <div class="gameplay-header">
-      <div class="gameplay-heading-wrapper">
-        <img class="gameplay-crown" src="" alt="Golden Crown" />
-        <h2>Gameplay</h2>
-      </div>
+  <div class="gameplay-container container">
+    <div>
+      <img src="/src/img/webp/ornament-top.webp" alt="Golden Crown" />
+      <h2>Gameplay</h2>
       <h3>An icy world of secrets—waiting to be seen</h3>
     </div>
-
-    <div class="card-row">
-      <div class="card card-lens">
-        <img src="" alt="Magnifying Glass" />
-        <p>
-          In Enchanted Kingdom, your wits are your strongest weapon. Each
-          chapter introduces beautifully illustrated scenes teeming with hidden
-          objects, enchanted mechanisms, and logic-based conundrums.
-        </p>
-      </div>
-
-      <div class="card card-key">
-        <img src="" alt="Golden Key" />
-        <p>
-          Seek out items tucked beneath snowdrifts, decode cryptic runes, and
-          assemble relics that unlock ancient passageways. Puzzles vary in
-          complexity and style—from elemental matching games to rotating magic
-          rings that power enchanted gates.
-        </p>
-      </div>
+    <div>
+      <img src="/src/img/webp/magnifying-glass.webp" alt="Magnifying Glass" />
+      <p>
+        In Enchanted Kingdom, your wits are your strongest weapon. Each chapter
+        introduces beautifully illustrated scenes teeming with hidden objects,
+        enchanted mechanisms, and logic-based conundrums
+      </p>
     </div>
-    <div class="card card-scene">
-      <img src="" alt="Gameplay Scene" />
+    <div>
+      <img src="/src/img/webp/ornated-key.webp" alt="Golden Key" />
+      <p>
+        Seek out items tucked beneath snowdrifts, decode cryptic runes, and
+        assemble relics that unlock ancient passageways. Puzzles vary in
+        complexity and style—from elemental matching games to rotating magic
+        rings that power enchanted gates
+      </p>
+    </div>
+    <div>
+      <img src="/src/img/webp/" alt="Gameplay Scene" />
       <p>
         Hidden object scenes are dynamic, with some items revealed only after
         triggering special actions. The hint system is robust yet optional—great
@@ -476,29 +470,90 @@
     </main>
 
     <footer class="footer">
-  <div class="container footer-container">
+  <div class="footer-links-container">
     <p class="footer-email">
       Website:
       <a
-        class="footer-email"
         href="https://enchantedfunmania.com"
         target="_blank"
-        >enchantedfunmania.com</a
+        class="footer-link light"
+
       >
+        enchantedfunmania.com
+      </a>
     </p>
-    <div class="footer-links-container">
+
+     <div class="footer-links-container">
       <a class="footer-link" href="#">Privacy Policy</a>
       <a class="footer-link light" href="#">Terms and Conditions</a>
       <a class="footer-link light" href="#">Cookies Policy</a>
     </div>
+
     <div class="footer-social">
       <p>Follow us</p>
       <div class="footer-social-icons">
-        <a class="footer-icon" href="#"><img src="" alt="Instagram" /></a>
-        <a class="footer-icon" href="#"><img src="" alt="Facebook" /></a>
-        <a class="footer-icon" href="#"><img src="" alt="Twitter" /></a>
+        <a href="#" class="footer-icon">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/src/img/webp/Instagram@2x.webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/src/img/webp/Instagram.webp"
+            />
+            <img
+              src="/src/img/webp/Instagram.webp"
+              alt="Instagram"
+              loading="lazy"
+              width="40"
+              height="40"
+            />
+          </picture>
+        </a>
+
+        <a href="#" class="footer-icon">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/src/img/webp/Facebook@2x.webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/src/img/webp/Facebook.webp"
+            />
+            <img
+              src="/src/img/webp/Facebook.webp"
+              alt="Facebook"
+              loading="lazy"
+              width="40"
+              height="40"
+            />
+          </picture>
+        </a>
+
+        <a href="#" class="footer-icon">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/src/img/webp/Twitter@2x.webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/src/img/webp/Twitter.webp"
+            />
+            <img
+              src="/src/img/webp/Twitter.webp"
+              alt="Twitter"
+              loading="lazy"
+              width="40"
+              height="40"
+            />
+          </picture>
+        </a>
       </div>
     </div>
+
     <div class="footer-line"></div>
     <p class="footer-copy">
       © 2025 Enchanted Funmania Studios. All Rights Reserved
