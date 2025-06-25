@@ -13,7 +13,7 @@
   top: 0;
   left: 0;
   background-color: #0e7490;
-  z-index: 1000;
+  z-index: 1010;
 }
 .mob-menu-header {
   display: flex;

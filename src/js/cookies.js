@@ -4,10 +4,7 @@ const declineBtn = document.querySelector('[data-action="decline-cookies"]');
 
 const COOKIE_KEY = 'cookies-consent';
 
-// Перевіряємо стан у сховищі
 const userConsent = localStorage.getItem(COOKIE_KEY);
-
-console.log('User consent:', userConsent);
 
 if (!userConsent) {
   cookieModal.classList.remove('hidden');
