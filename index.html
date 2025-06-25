@@ -12,24 +12,33 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/STP-9555/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-9555/assets/styles-DlZR9dbB.css">
+    <link rel="stylesheet" crossorigin href="/STP-9555/assets/styles-BbDBbs5v.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
-    <nav>
-      <a href="#"><img src="/src/img/favicon.webp" alt="game-icon" /></a>
+    <nav class="header-nav">
+      <a href="#"
+        ><img
+          class="header-logo-img"
+          src="../img/webp/logo-icon.webp"
+          alt="game-icon"
+      /></a>
       <ul class="nav-list">
         <li class="nav-item"><a href="#welcome">Welcome</a></li>
-        <li class="nav-item">
-          <a href="#about-game" class="dropdown-toggle">
-            About &#9660;
-            <svg class="icon-down" width="24" height="24">
-              <use href="/src/img/sprite.svg#icon-down"></use>
+        <li class="nav-item dropdown-toggle">
+          <a>
+            About<svg class="icon-down icon" width="24" height="24">
+              <use href="/STP-9555/assets/sprite-B7Sp257b.svg#icon-down"></use>
             </svg>
           </a>
           <div class="dropdown-menu">
             <ul>
+              <img
+                class="drop-ornament-img-top"
+                src="../img/webp/ornament-top@2x.webp"
+                alt="Ornament"
+              />
               <li><a href="#storyline">Storyline</a></li>
               <li><a href="#gameplay">Gameplay</a></li>
               <li><a href="#bonus-chapter">Bonus Chapter</a></li>
@@ -38,51 +47,72 @@
               <li><a href="#design">Design</a></li>
               <li><a href="#hints">Hints</a></li>
             </ul>
+            <img
+              class="drop-ornament-img-bottom"
+              src="../img/webp/ornament-bottom@2x.webp"
+              alt="Ornament"
+            />
           </div>
         </li>
         <li class="nav-item"><a href="#offline-mode">Offline Mode</a></li>
         <li class="nav-item"><a href="#fan-content">Fan Content</a></li>
         <li class="nav-item"><a href="#contact">Contact</a></li>
       </ul>
-      <a href="#download" class="btn btn-primary">Download</a>
-      <button class="burger-btn" type="button" data-menu-open>
-        <svg class="burger-icon" width="32" height="32">
-          <use href="/STP-9555/assets/sprite-B0FqwMRg.svg#icon-menu"></use>
+      <a class="burger-btn" type="button" data-action="open">
+        <svg class="burger-icon icon" width="32" height="32">
+          <use href="../img/sprite.svg#icon-burger"></use>
         </svg>
-      </button>
+      </a>
     </nav>
   </div>
 </header>
 
-    <div class="mob-menu-backdrop hidden">
-    <div class="mob-menu-header">
-        <a href="#" class="mob-menu-logo" aria-label="Home">
-            <img src="/img/mob-logo.webp" alt="Mobile menu logo">
-        </a>
-        <button class="mob-menu-close" aria-label="close menu">
-            <svg class="mob-menu-close-icon" width="24" height="24" >
-                <use href="/STP-9555/assets/sprite-B0FqwMRg.svg#icon-close">X</use>
-            </svg>
-        </button>
-        <nav class="mob-menu-nav">
-            <ul>
-                <li><a href="#welcome">Welcome</a></li>
-                <li><a href="#storyline">Storyline</a></li>
-                <li><a href="#gameplay">Gameplay</a></li>
-                <li><a href="#bonus-chapter">Bonus Chapter</a></li>
-                <li><a href="#collectibles">Collectibles</a></li>
-                <li><a href="#replayability">Replayability</a></li>
-                <li><a href="#design">Design</a></li>
-                <li><a href="#hints">Hints</a></li>
-                <li><a href="#offline-mode">Offline Mode</a></li>
-                <li><a href="#fan-content">Fan Content</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+    <div class="mob-menu-backdrop" data-visible="close">
+  <div class="mob-menu-header">
+    <a href="#" class="mob-menu-logo" aria-label="Home">
+      <img
+        src="../img/webp/logo-icon@2x.webp"
+        alt="Mobile menu logo"
+        width="50"
+        height="50"
+        class="mob-menu-logo-img"
+      />
+    </a>
+    <a class="mob-menu-close" data-action="close">
+      <svg class="mob-menu-close-icon icon" width="24" height="24">
+        <use href="../img/sprite.svg#icon-close"></use>
+      </svg>
+    </a>
+  </div>
+  <nav class="mob-menu-nav">
+    <img
+      class="mob-ornament-img top"
+      src="../img/webp/ornament-top@2x.webp"
+      alt="Ornament"
+    />
+    <ul>
+      <li><a href="#welcome">Welcome</a></li>
+      <li><a href="#storyline">Storyline</a></li>
+      <li><a href="#gameplay">Gameplay</a></li>
+      <li><a href="#bonus-chapter">Bonus Chapter</a></li>
+      <li><a href="#collectibles">Collectibles</a></li>
+      <li><a href="#replayability">Replayability</a></li>
+      <li><a href="#design">Design</a></li>
+      <li><a href="#hints">Hints</a></li>
+      <li><a href="#offline-mode">Offline Mode</a></li>
+      <li><a href="#fan-content">Fan Content</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <img
+      class="mob-ornament-img bottom"
+      src="../img/webp/ornament-bottom@2x.webp"
+      alt="Ornament"
+    />
+  </nav>
 </div>
 
-    <main>
+
+    <!-- <main>
       <section class="welcome">
   <div class="welcome-container container">
     <div>
@@ -457,8 +487,8 @@
     </p>
   </div>
 </footer>
-
-    <div class="cookies-backdrop hidden">
+ -->
+    <div class="cookies-backdrop hidden" id="cookieModal" data-visible="close">
   <div class="cookies-modal-content">
     <p class="cookies-banner">
       We use cookies to improve your experience on our website. By browsing this
@@ -466,12 +496,12 @@
     </p>
     <ul class="cookies-btns">
       <li>
-        <button class="cookies-accept-btn" aria-label="accept cookies">
+        <button class="cookies-accept-btn" data-action="accept-cookies">
           Accept Cookies
         </button>
       </li>
       <li>
-        <button class="cookies-decline-btn" aria-label="decline cookies">
+        <button class="cookies-decline-btn" data-action="decline-cookies">
           Decline Cookies
         </button>
       </li>
