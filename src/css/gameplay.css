@@ -1,0 +1,199 @@
+.gameplay {
+  background-color: #0e7490;
+  padding: 24px 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+.gameplay-container {
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.gameplay-header {
+  width: 100%;
+  max-width: 988px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+}
+
+.gameplay-heading-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.gameplay-crown {
+  position: absolute;
+  top: -74px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 206px;
+  height: 148px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.gameplay-header h2 {
+  font-family: 'Rakkas', serif;
+  font-size: 32px;
+  background: #0891b2;
+  padding: 16px 32px;
+  border: 2px solid #c39325;
+  border-radius: 60px;
+  width: fit-content;
+  margin: 86px 0 0 0;
+  z-index: 3;
+}
+
+.gameplay-header h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.card {
+  padding: 24px 12px;
+  border-radius: 24px;
+  background-color: #1e3a8a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 288px;
+}
+
+.card img {
+  object-fit: contain;
+  width: 106px;
+  height: 80px;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  margin-top: 12px;
+  max-width: 240px;
+  text-align: center;
+}
+
+.card-lens {
+  background-color: #1e3a8a;
+  height: 255px;
+}
+
+.card-key {
+  background-color: #155e75;
+  height: 351px;
+}
+
+.card-scene {
+  background-color: #075985;
+  padding: 24px 12px;
+  border-radius: 24px;
+  width: 288px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.card-scene img {
+  width: 199px;
+  height: 107px;
+}
+
+.card-scene p {
+  text-align: left;
+  font-size: 14px;
+  line-height: 2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  max-width: 240px;
+}
+
+@media (min-width: 768px) {
+  .gameplay {
+    padding: 48px 0;
+  }
+
+  .gameplay-container {
+    width: 1240px;
+    padding-left: 24px;
+    gap: 48px;
+  }
+
+  .gameplay-header {
+    max-width: 988px;
+  }
+
+  .gameplay-heading-wrapper h2 {
+    font-size: 32px;
+  }
+
+  .gameplay-header h3 {
+    font-size: 36px;
+  }
+
+  .card-row {
+    display: flex;
+    gap: 32px;
+  }
+
+  .card-lens,
+  .card-key {
+    width: 478px;
+    height: 510px;
+  }
+
+  .card-lens img {
+    width: 318px;
+    height: 235px;
+  }
+
+  .card-key img {
+    width: 318px;
+    height: 240px;
+  }
+
+  .card p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 400px;
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  .card-scene {
+    width: 988px;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 24px;
+  }
+
+  .card-scene img {
+    width: 396px;
+    height: 212px;
+  }
+
+  .card-scene p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    text-align: left;
+  }
+}
