@@ -7,13 +7,15 @@ const COOKIE_KEY = 'cookies-consent';
 // Перевіряємо стан у сховищі
 const userConsent = localStorage.getItem(COOKIE_KEY);
 
+console.log('User consent:', userConsent);
+
 if (!userConsent) {
-  cookieModal.classList.add('show');
+  cookieModal.classList.remove('hidden');
 }
 
 const handleConsent = value => {
   localStorage.setItem(COOKIE_KEY, value);
-  cookieModal.classList.remove('show');
+  cookieModal.classList.add('hidden');
 };
 
 acceptBtn.addEventListener('click', () => handleConsent('accepted'));
