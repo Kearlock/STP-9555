@@ -70,3 +70,93 @@
   color: #877f7f;
   text-align: center;
 }
+@media only screen and (min-width: 1200px) {
+  .footer {
+    padding: 32px 80px;
+    background: #164e63;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  /* Website */
+  .footer-email {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  /* Policies */
+  .footer-links-container:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.33333;
+    color: #d9d9d9;
+  }
+
+  .footer-link {
+    font-size: 24px;
+    color: #d9d9d9;
+    text-decoration: none;
+  }
+
+  /* Follow us */
+  .footer-social {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  .footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin-top: 8px;
+  }
+
+  .footer-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  /* Horizontal line */
+  .footer-line {
+    border: 1px solid #ffffff;
+    width: 1041px;
+    height: 0px;
+    margin: 40px auto 20px;
+  }
+
+  /* Copy */
+  .footer-copy {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+    color: #877f7f;
+    text-align: center;
+  }
+}
