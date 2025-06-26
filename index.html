@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/STP-9555/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-9555/assets/styles-Dqy3tgyz.css">
+    <link rel="stylesheet" crossorigin href="/STP-9555/assets/styles-CUNsvID0.css">
   </head>
   <body>
     <header class="header">
@@ -113,35 +113,52 @@
 
 
     <main>
-      <section class="welcome" id="welcome">
-  <div class="welcome-container container">
-    <div>
-      <h1>Welcome to the Realm</h1>
-      <h2>Step into a storybook kingdom locked in time and ice</h2>
-      <p>
+      <section class="welcome">
+  <div class="welcome-container">
+    <div class="welcome-left">
+      <h1 class="welcome-title">Welcome to the <span>Realm</span></h1>
+      <h2 class="welcome-subtitle">
+        Step into a storybook kingdom locked in time and <span>ice</span>
+      </h2>
+
+      <p class="welcome-text">
         Enter Enchanted Kingdom: Frost Curse, where an age-old battle between
         light and darkness has reached a chilling climax. As the rightful heir,
         you're thrust into a kingdom teetering on the edge of ruin—its magic
         faltering, its people silenced, its crown abandoned. The realm is rich
-        with ancient history, elemental forces, and mysterious alliances
+        with ancient history, elemental forces, and mysterious alliances.
       </p>
-      <a href="#">
-        <img src="" alt="Google Play" />
+
+      <img
+        class="welcome-image-sword"
+        src="./img/webp/sword.webp"
+        alt="sword"
+      />
+
+      <a href="#" class="welcome-play-button">
+        <img
+          src="./img/webp/GooglePlay.webp"
+          width="51"
+          height="56"
+          alt="Google Play Icon"
+        />
+        <span>Google Play</span>
       </a>
-      <div>
-        <img src="" alt="sword" />
-      </div>
-      <div>
-        <img src="" alt="a sword in a crown" />
-      </div>
     </div>
-    <div>
-      <p>
+
+    <div class="welcome-right">
+      <img
+        class="welcome-image-main"
+        src="./img/webr/crown-sword.webp"
+        alt="a sword in a crown"
+      />
+
+      <p class="welcome-text">
         From opulent throne rooms to frostbitten glades, every corner holds
         secrets. You won’t just observe this story—you’ll shape it through
         clever decisions and determined exploration. Whether you're a hidden
         object veteran or a newcomer to the genre, prepare to lose yourself in a
-        realm where every snowflake carries a story
+        realm where every snowflake carries a story.
       </p>
     </div>
   </div>
@@ -193,21 +210,29 @@
 
       <section class="gameplay" id="gameplay">
   <div class="gameplay-container container">
-    <div>
-      <img src="/STP-9555/assets/ornament-top-BgZYb8z6.webp" alt="Golden Crown" />
-      <h2>Gameplay</h2>
+    <div class="gameplay-header">
+      <div class="gameplay-heading-wrapper">
+        <img
+          class="gameplay-crown"
+          src="./img/webp/ornament-top.webp"
+          alt="Golden Crown"
+        />
+        <h2>Gameplay</h2>
+      </div>
       <h3>An icy world of secrets—waiting to be seen</h3>
     </div>
-    <div>
-      <img src="/STP-9555/assets/magnifying-glass-D4zDN80v.webp" alt="Magnifying Glass" />
+
+    <div class="card card-lens">
+      <img src="./img/webp/magnifying-glass.webp" alt="Magnifying Glass" />
       <p>
         In Enchanted Kingdom, your wits are your strongest weapon. Each chapter
         introduces beautifully illustrated scenes teeming with hidden objects,
         enchanted mechanisms, and logic-based conundrums
       </p>
     </div>
-    <div>
-      <img src="/STP-9555/assets/ornated-key-Z0cgKe9U.webp" alt="Golden Key" />
+
+    <div class="card card-key">
+      <img src="./img/webp/ornated-key.webp" alt="Golden Key" />
       <p>
         Seek out items tucked beneath snowdrifts, decode cryptic runes, and
         assemble relics that unlock ancient passageways. Puzzles vary in
@@ -215,8 +240,9 @@
         rings that power enchanted gates
       </p>
     </div>
-    <div>
-      <img src="/STP-9555/assets/gameplay-img3-CxER_7Pc.webp" alt="Gameplay Scene" />
+
+    <div class="card-scene">
+      <img src="./img/webp/gameplay-img3.webp" alt="Gameplay Scene" />
       <p>
         Hidden object scenes are dynamic, with some items revealed only after
         triggering special actions. The hint system is robust yet optional—great
