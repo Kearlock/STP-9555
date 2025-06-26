@@ -111,7 +111,7 @@
   fill: #fff;
 }
 
-@media (min-width: 856px) {
+@media (min-width: 900px) {
   .nav-list {
     display: flex;
   }
