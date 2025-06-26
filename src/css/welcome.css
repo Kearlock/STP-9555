@@ -1,0 +1,135 @@
+.welcome {
+  padding-top: 16px;
+  padding-inline: 20px;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+/* ======= МОБІЛЬНА ВЕРСІЯ ======= */
+.welcome-title {
+  font-family: 'Rakkas', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+}
+
+.welcome-title span {
+  color: #a5f3fc;
+}
+
+.welcome-subtitle {
+  font-family: 'Rakkas', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+.welcome-subtitle span {
+  color: #a5f3fc;
+}
+
+.welcome-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.welcome-image-main {
+  width: 288px;
+  height: 389px;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+}
+
+.welcome-image-sword {
+  width: 61px;
+  height: 288px;
+  transform: rotate(-90deg);
+  display: block;
+  margin: 24px auto;
+  object-fit: contain;
+}
+
+.welcome-play-button {
+  border: 2px solid #6d6d6d;
+  border-radius: 20px;
+  padding: 23px 34px;
+  width: 227px;
+  height: 76px;
+  background: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 24px auto 0;
+}
+
+/* ======= ДЕСКТОПНА ВЕРСІЯ ======= */
+@media (min-width: 1024px) {
+  .welcome-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .welcome-left,
+  .welcome-right {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .welcome-title {
+    font-size: 64px;
+    text-align: left;
+  }
+
+  .welcome-subtitle {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .welcome-text {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .welcome-image-main {
+    width: 442px;
+    height: 599px;
+    margin: 0 auto 24px;
+  }
+
+  .welcome-image-sword {
+    width: 87px;
+    height: 411px;
+    transform: none;
+    margin: 24px auto;
+  }
+
+  .welcome-play-button {
+    width: 321px;
+    height: 106px;
+    padding: 23px 34px;
+    font-size: 20px;
+  }
+}
