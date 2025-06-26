@@ -1,0 +1,159 @@
+/* Базові стилі (mobile-first) */
+.offline {
+  padding-top: 24px;
+  background-color: #0e7490;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.offline-container {
+  margin-left: 16px;
+}
+
+.crown-icon {
+  display: block;
+  width: 118px;
+  height: 31px;
+  margin-left: 0;
+  transform: rotate(-180deg);
+}
+
+.offline-title {
+  border: 2px solid #c39325;
+  border-radius: 60px;
+  width: 206px;
+  height: 65px;
+  background: #0891b2;
+  color: #fff;
+  font-family: 'Rakkas', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.offline-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.offline-card {
+  border-radius: 40px;
+  padding: 24px 11px;
+  margin-bottom: 8px;
+}
+
+.primary-card {
+  background-color: #1e3a8a;
+  width: 288px;
+}
+
+.secondary-card {
+  background-color: #155e75;
+  width: 288px;
+}
+
+.offline-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  color: #fff;
+  text-align: left;
+}
+
+.game-preview {
+  display: block;
+  width: 288px;
+  height: 159px;
+  margin-top: 8px;
+  border-radius: 20px;
+}
+
+/* Десктопна версія (1024px і більше) */
+@media (min-width: 1024px) {
+  .offline {
+    padding: 60px 0;
+  }
+
+  .offline-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ліве вирівнювання контейнера */
+  }
+
+  .offline-header {
+    width: 100%;
+    max-width: 480px;
+    text-align: left; /* Ліве вирівнювання тексту */
+  }
+
+  .crown-icon {
+    width: 150px;
+    height: 40px;
+    margin-left: 0;
+    transform: rotate(-180deg);
+  }
+
+  .offline-title {
+    width: 280px;
+    height: 80px;
+    font-size: 32px;
+    margin: 20px 0;
+    justify-content: flex-start; /* Вирівнювання тексту вліво */
+    padding-left: 30px;
+  }
+
+  .offline-subtitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: left; /* Ліве вирівнювання */
+  }
+
+  .cards-row {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .offline-card {
+    width: 508px !important;
+    height: 230px;
+    padding: 24px;
+    margin-bottom: 0;
+  }
+
+  .primary-card {
+    background-color: #1e3a8a;
+  }
+
+  .secondary-card {
+    background-color: #155e75;
+  }
+
+  .offline-text {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .offline-image {
+    width: 507px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .game-preview {
+    width: 507px;
+    height: 280px;
+    border-radius: 20px;
+    margin: 0;
+  }
+}
