@@ -1,13 +1,13 @@
 .welcome {
-  padding-top: 16px;
-  padding-inline: 20px;
+  padding: 16px 0;
+  /* padding-inline: 20px; */
 }
 
 .welcome-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 8px;
   text-align: center;
 }
 
@@ -44,92 +44,92 @@
 }
 
 .welcome-image-main {
-  width: 288px;
-  height: 389px;
+  /* width: 288px;
+  height: 389px; */
   margin: 0 auto;
   display: block;
   object-fit: contain;
 }
 
 .welcome-image-sword {
-  width: 61px;
+  /* width: 61px;
   height: 288px;
-  transform: rotate(-90deg);
+  transform: rotate(-90deg); */
   display: block;
-  margin: 24px auto;
+  /* margin: 24px auto; */
   object-fit: contain;
 }
 
 .welcome-play-button {
   border: 2px solid #6d6d6d;
   border-radius: 20px;
-  padding: 23px 34px;
-  width: 227px;
-  height: 76px;
+  padding: 16px 24px;
+  /* width: 227px; */
+  /* height: 76px; */
   background: #e6e6e6;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 24px;
   text-decoration: none;
   color: #000;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 20px;
   font-weight: 500;
-  margin: 24px auto 0;
+  /* margin: 24px auto 0; */
 }
 
 /* ======= ДЕСКТОПНА ВЕРСІЯ ======= */
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   .welcome-container {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 48px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
   }
 
-  .welcome-left,
-  .welcome-right {
-    flex: 1;
-    max-width: 500px;
+  .welcome-top-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .welcome-image-main {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .welcome-bottom-left {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .welcome-title {
+    width: max-content;
     font-size: 64px;
-    text-align: left;
   }
 
   .welcome-subtitle {
     font-size: 36px;
-    text-align: left;
   }
 
   .welcome-text {
     font-size: 20px;
     line-height: 1.6;
-    text-align: left;
-  }
-
-  .welcome-image-main {
-    width: 442px;
-    height: 599px;
-    margin: 0 auto 24px;
   }
 
   .welcome-image-sword {
-    width: 87px;
-    height: 411px;
+    /* position: absolute; */
     transform: none;
-    margin: 24px auto;
   }
 
   .welcome-play-button {
-    width: 321px;
-    height: 106px;
-    padding: 23px 34px;
-    font-size: 20px;
+    padding: 16px 24px;
   }
 }
