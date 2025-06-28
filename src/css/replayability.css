@@ -1,127 +1,114 @@
 .replayability {
   background-color: #0e7490;
-  padding: 24px 16px;
+  padding: 32px 16px;
   font-family: 'Montserrat', sans-serif;
+  color: #fff;
 }
 
 .replayability-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .title-block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  text-align: center;
 }
 
 .crown {
   width: 48px;
-  height: auto;
   margin-bottom: -24px;
-  z-index: 2;
 }
 
 .title-box {
   background-color: #0891b2;
-  border: 2px solid #c39325;
+  border: 2px solid #facc15;
   border-radius: 60px;
-  width: 206px;
-  height: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 16px 48px;
 }
 
 .title-box h2 {
-  font-family: 'Rakkas', sans-serif;
+  font-family: 'Rakkas', serif;
   font-size: 24px;
-  font-weight: 400;
-  color: #fff;
   margin: 0;
+  color: white;
 }
 
 .subtitle {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  color: #fff;
   text-align: center;
-  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
   padding: 0 8px;
+  margin: 0;
+}
+
+.cards-row {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  width: 100%;
 }
 
 .card {
-  width: 242px;
-  height: 216px;
-  background: none;
-  text-align: center;
-  color: #fff;
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  padding: 0 12px;
+  text-align: center;
 }
 
 .card img {
-  width: 107px;
-  height: 89px;
+  width: 80px;
+  height: auto;
 }
 
 .card p {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.6;
-  padding: 0 8px;
-}
-
-.chest-card {
-  height: 188px;
+  margin: 0;
 }
 
 .final-text {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 2;
-  text-align: center;
-  color: #fff;
+  font-style: italic;
+  line-height: 1.8;
   padding: 0 16px;
+  max-width: 360px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-@media (min-width: 1024px) {
+/* DESKTOP: 900px+ */
+@media (min-width: 900px) {
   .replayability {
-    padding: 32px 0;
-  }
-
-  .replayability-container {
-    width: 1200px;
-    margin: 0 auto;
-    align-items: flex-start;
+    padding: 48px 0;
   }
 
   .title-block {
-    position: relative;
-    margin-bottom: 32px;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .crown {
     width: 64px;
-    height: auto;
     margin-bottom: -32px;
   }
 
   .title-box {
-    width: 479px;
-    height: 115px;
-    border: 2px solid #c39325;
-    border-radius: 60px;
-    background-color: #0891b2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 24px 64px;
   }
 
   .title-box h2 {
@@ -129,63 +116,37 @@
   }
 
   .subtitle {
-    font-size: 36px;
-    margin-bottom: 40px;
+    text-align: left;
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+    max-width: 800px;
   }
 
   .cards-row {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 32px;
-    flex-wrap: nowrap;
-    margin-bottom: 32px;
   }
 
   .card {
-    text-align: center;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.6;
-    padding: 0 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 260px;
+    padding: 0 8px;
   }
 
   .card img {
     width: 107px;
     height: 89px;
-    margin-bottom: 16px;
   }
 
-  .card-1 {
-    width: 242px;
-    height: 264px;
-  }
-
-  .card-2 {
-    width: 242px;
-    height: 296px;
-  }
-
-  .card-3 {
-    width: 242px;
-    height: 264px;
-  }
-
-  .card-4 {
-    width: 242px;
-    height: 232px;
+  .card p {
+    font-size: 16px;
   }
 
   .final-text {
-    font-size: 20px;
-    line-height: 1.6;
-    text-align: center;
-    color: #fff;
+    font-size: 18px;
     max-width: 800px;
-    margin: 0 auto;
+    margin-top: 24px;
   }
 }
