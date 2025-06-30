@@ -1,27 +1,32 @@
 .replayability {
   background-color: #0e7490;
-  padding: 24px 16px;
+  padding: 32px 16px;
   font-family: 'Montserrat', sans-serif;
+  color: #fff;
 }
 
 .replayability-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 24px;
 }
 
+/* ===== MOBILE ===== */
 .title-block {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: relative;
+  align-items: flex-start;
+  padding-left: 0;
 }
 
 .crown {
-  width: 48px;
-  height: auto;
-  margin-bottom: -24px;
+  width: 118px;
+  height: 31px;
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-180deg);
   z-index: 2;
 }
 
@@ -29,129 +34,138 @@
   background-color: #0891b2;
   border: 2px solid #c39325;
   border-radius: 60px;
-  width: 206px;
-  height: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 16px 32px;
+  width: fit-content;
 }
 
 .title-box h2 {
-  font-family: 'Rakkas', sans-serif;
+  font-family: 'Rakkas', serif;
   font-size: 24px;
   font-weight: 400;
-  color: #fff;
+  color: white;
   margin: 0;
 }
 
 .subtitle {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  text-align: left;
   font-size: 16px;
-  color: #fff;
-  text-align: center;
+  font-weight: 600;
   margin: 0;
-  padding: 0 8px;
+  max-width: 360px;
+}
+
+/* Картки по центру */
+.cards-row {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  width: 100%;
 }
 
 .card {
-  width: 242px;
-  height: 216px;
   background: none;
-  text-align: center;
-  color: #fff;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  padding: 0 12px;
+  text-align: center;
 }
 
 .card img {
-  width: 107px;
-  height: 89px;
+  width: 80px;
+  height: auto;
 }
 
 .card p {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.6;
-  padding: 0 8px;
-}
-
-.chest-card {
-  height: 188px;
+  margin: 0;
 }
 
 .final-text {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 2;
-  text-align: center;
-  color: #fff;
+  font-style: italic;
+  line-height: 1.8;
   padding: 0 16px;
+  max-width: 360px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 @media (min-width: 1024px) {
   .replayability {
-    padding: 32px 0;
+    padding: 64px 0;
   }
 
   .replayability-container {
-    width: 1200px;
-    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
     align-items: flex-start;
   }
 
   .title-block {
-    position: relative;
     margin-bottom: 32px;
+    position: relative;
   }
 
   .crown {
-    width: 64px;
-    height: auto;
-    margin-bottom: -32px;
+    width: 210px;
+    height: 55px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-180deg);
   }
 
   .title-box {
     width: 479px;
     height: 115px;
-    border: 2px solid #c39325;
-    border-radius: 60px;
-    background-color: #0891b2;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid #c39325;
+    background-color: #0891b2;
+    border-radius: 60px;
   }
 
   .title-box h2 {
     font-size: 48px;
+    font-family: 'Rakkas', serif;
+    margin: 0;
   }
 
   .subtitle {
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 32px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    text-align: left;
+    max-width: 800px;
   }
 
   .cards-row {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 32px;
-    flex-wrap: nowrap;
-    margin-bottom: 32px;
+    width: 100%;
+    padding-left: 0; /* забираємо auto-centering */
+    margin-left: 0; /* вирівнювання ліворуч */
   }
 
   .card {
-    text-align: center;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.6;
-    padding: 0 4px;
+    max-width: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 0;
   }
 
   .card img {
@@ -160,32 +174,18 @@
     margin-bottom: 16px;
   }
 
-  .card-1 {
-    width: 242px;
-    height: 264px;
-  }
-
-  .card-2 {
-    width: 242px;
-    height: 296px;
-  }
-
-  .card-3 {
-    width: 242px;
-    height: 264px;
-  }
-
-  .card-4 {
-    width: 242px;
-    height: 232px;
+  .card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
   }
 
   .final-text {
-    font-size: 20px;
-    line-height: 1.6;
-    text-align: center;
-    color: #fff;
+    font-size: 18px;
     max-width: 800px;
-    margin: 0 auto;
+    margin-top: 32px;
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
   }
 }

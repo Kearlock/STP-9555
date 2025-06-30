@@ -8,7 +8,7 @@
 .hints-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* Центрує все, крім хедера */
   gap: 16px;
   padding: 0 16px;
 }
@@ -16,9 +16,10 @@
 .hints-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* Вирівнюємо вліво */
   position: relative;
   margin-bottom: 12px;
+  width: 100%;
 }
 
 .hints-crown {
@@ -26,7 +27,6 @@
   height: 31px;
   transform: rotate(-180deg);
   margin-bottom: -16px;
-  align-self: center;
 }
 
 .hints-header h2 {
@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0; /* Скасовує auto-центрування */
   color: #fff;
 }
 
@@ -52,6 +52,7 @@
   color: #fff;
   margin-top: 12px;
   text-align: left;
+  width: 100%;
 }
 
 .hints-subtext {
@@ -81,8 +82,7 @@
 .hints-card {
   border-radius: 60px;
   padding: 24px 23px;
-  width: 288px;
-  height: 368px;
+  width: 298px; /* Збільшено на 10px */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,12 +96,12 @@
 
 .hints-card-dark {
   background: #075985;
-  height: 297px;
 }
 
 .hints-card img {
-  width: 318px;
-  height: 227px;
+  width: 100%;
+  max-width: 318px;
+  height: auto;
   object-fit: contain;
 }
 
@@ -109,10 +109,16 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.8;
   color: #fff;
   margin: 0;
-  text-align: left;
+  text-align: center;
+}
+
+.hints-final {
+  text-align: center;
+  align-self: center;
+  width: 100%;
 }
 
 .hints-final p {
@@ -126,12 +132,16 @@
 }
 
 /* ===== DESKTOP STYLES ===== */
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   .hints-container {
     padding: 0 80px;
     max-width: 1200px;
     margin: 0 auto;
     align-items: flex-start;
+  }
+
+  .hints-header {
+    align-items: center;
   }
 
   .hints-header h2 {
@@ -178,6 +188,7 @@
   .hints-card p.hints-text {
     font-size: 20px;
     line-height: 1.6;
+    text-align: left;
   }
 
   .hints-final p {

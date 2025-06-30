@@ -18,28 +18,28 @@
   background: #0891b2;
   border: 2px solid #c39325;
   border-radius: 60px;
-  width: 479px;
-  height: 115px;
+  width: 206px;
+  height: 65px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .bonus-crown {
   position: absolute;
-  top: -55px;
+  top: -40px;
   left: 50%;
   transform: translateX(-50%) rotate(-180deg);
-  width: 210px;
-  height: 55px;
+  width: 118px;
+  height: 31px;
   object-fit: contain;
 }
 
 .bonus-header h2 {
   font-family: 'Rakkas', sans-serif;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 24px;
   color: #fff;
   margin: 0;
 }
@@ -47,21 +47,22 @@
 .bonus-subtitle {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 20px;
   color: #fff;
   margin-top: 24px;
-  margin-bottom: 32px;
-  max-width: 596px;
+  margin-bottom: 24px;
+  max-width: 100%;
+  text-align: left;
 }
 
 .bonus-card {
-  width: 596px;
-  height: 250px;
-  padding: 24px;
-  border-radius: 40px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 24px;
   display: flex;
   align-items: flex-start;
-  margin-bottom: 54px;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 .card-blue {
@@ -76,32 +77,35 @@
 .bonus-card p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.5;
   color: #fff;
   margin: 0;
+  text-align: left;
 }
 
 .bonus-image {
-  align-self: flex-end;
-  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
 }
 
 .bonus-image img {
-  width: 429px;
-  height: 644px;
-  border-radius: 60px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 40px;
   object-fit: cover;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   .bonus-container {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     padding: 0 80px;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 40px;
   }
 
   .bonus-left {
@@ -110,8 +114,48 @@
     max-width: 596px;
   }
 
-  .bonus-image {
-    align-self: flex-end;
+  .bonus-header {
+    width: 479px;
+    height: 115px;
+    margin-left: 0;
+  }
+
+  .bonus-header h2 {
+    font-size: 48px;
+  }
+
+  .bonus-crown {
+    top: -55px;
+    width: 210px;
+    height: 55px;
+  }
+
+  .bonus-subtitle {
+    font-size: 36px;
+    margin-top: 24px;
     margin-bottom: 32px;
+  }
+
+  .bonus-card {
+    padding: 24px;
+    border-radius: 40px;
+    margin-bottom: 15px;
+  }
+
+  .bonus-card p {
+    font-size: 20px;
+  }
+
+  .bonus-image {
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .bonus-image img {
+    width: 429px;
+    height: 644px;
+    border-radius: 60px;
+    object-fit: cover;
   }
 }

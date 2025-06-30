@@ -6,74 +6,80 @@
 }
 
 .fan-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  position: relative;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-/* ===== КОРОНА по центру КОНТЕЙНЕРА ===== */
-.fan-crown-wrapper {
-  position: relative;
-  width: 100%;
   display: flex;
-  justify-content: center;
-  margin-bottom: -16px;
-  z-index: 2;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
 }
 
-.fan-crown {
-  width: 118px;
-  height: 31px;
-  transform: rotate(-180deg);
-}
-
-/* ===== Заголовок та підзаголовок ліворуч ===== */
-.fan-header {
-  width: 100%;
+/* ========== ЛІВИЙ КОНТЕЙНЕР ========== */
+.fan-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  text-align: left;
-  gap: 8px;
+  margin-left: 16px;
 }
 
-.fan-header h2 {
+.fan-title-wrapper {
+  position: relative;
   width: 206px;
   height: 65px;
-  background-color: #0891b2;
+  margin-bottom: 24px;
+}
+
+.fan-crown {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-180deg);
+  width: 118px;
+  height: 31px;
+}
+
+.fan-title {
   border: 2px solid #c39325;
   border-radius: 60px;
+  background-color: #0891b2;
+  color: #fff;
   font-family: 'Rakkas', cursive;
   font-weight: 400;
   font-size: 24px;
-  color: #ffffff;
+  width: 206px;
+  height: 65px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
 }
 
-.fan-header h3 {
+.fan-subtitle {
   font-weight: 600;
   font-size: 16px;
   margin: 0;
   max-width: 600px;
+  text-align: left;
+  margin-bottom: 24px;
 }
 
-/* ===== Абзаци по центру ===== */
-.fan-container > div p {
+/* ========== ЦЕНТР КОНТЕНТУ ========== */
+.fan-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.fan-paragraph p {
   font-weight: 400;
   font-size: 14px;
   line-height: 2;
   text-align: center;
+  max-width: 700px;
   margin: 0;
 }
 
-/* ===== Зображення ===== */
 .fan-image {
   width: 288px;
   height: 159px;
@@ -87,34 +93,40 @@
     padding: 64px 80px;
   }
 
+  .fan-left {
+    margin-left: 80px;
+  }
+
+  .fan-title-wrapper {
+    width: 479px;
+    height: 115px;
+  }
+
   .fan-crown {
-    width: 140px;
-    height: auto;
+    width: 210px;
+    height: 55px;
+    top: -55px;
   }
 
-  .fan-header {
-    gap: 12px;
-    padding-top: 8px;
+  .fan-title {
+    width: 479px;
+    height: 115px;
+    font-size: 36px;
   }
 
-  .fan-header h2 {
-    width: 280px;
-    height: 80px;
-    font-size: 28px;
+  .fan-subtitle {
+    font-size: 24px;
+    margin-bottom: 40px;
   }
 
-  .fan-header h3 {
-    font-size: 20px;
-  }
-
-  .fan-container > div p {
+  .fan-paragraph p {
     font-size: 16px;
     line-height: 1.8;
   }
 
   .fan-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+    width: 507px;
+    height: 280px;
+    border-radius: 20px;
   }
 }
