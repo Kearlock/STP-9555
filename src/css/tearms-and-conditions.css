@@ -11,9 +11,9 @@ body {
   color: var(--text);
 }
 
-.container {
+/* .container {
   padding: 32px 16px;
-}
+} */
 
 a {
   color: #ffffff;
@@ -112,9 +112,9 @@ ul li {
 }
 
 @media (min-width: 768px) {
-  .container {
+  /* .container {
     padding: 48px 64px;
-  }
+  } */
 
   .main-title {
     font-size: 28px;
