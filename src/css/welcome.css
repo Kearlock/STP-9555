@@ -111,7 +111,7 @@
   }
 
   .welcome-title {
-    width: max-content;
+    /* width: max-content; */
     font-size: 64px;
   }
 
