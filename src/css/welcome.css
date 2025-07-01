@@ -79,6 +79,15 @@
   /* margin: 24px auto 0; */
 }
 
+.welcome-play-button:hover,
+.welcome-play-button:focus {
+  background: #d7d5d5;
+}
+
+.welcome-play-button:active {
+  background: #fcfbfb;
+}
+
 /* ======= ДЕСКТОПНА ВЕРСІЯ ======= */
 @media (min-width: 900px) {
   .welcome-container {

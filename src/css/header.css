@@ -1,5 +1,8 @@
 .header {
-  width: 100%vw;
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* width: 100%vw; */
   background-color: #0891b2;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
