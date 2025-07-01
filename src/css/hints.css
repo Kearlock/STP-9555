@@ -1,11 +1,9 @@
 .hints {
-  background-color: #0e7490;
   padding: 24px 0;
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
 }
 
-.hints-container {
+.hints-container:not[section-header] {
   display: flex;
   flex-direction: column;
   align-items: center; /* Центрує все, крім хедера */
