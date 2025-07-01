@@ -1,0 +1,42 @@
+.desktop-visible {
+  display: none;
+}
+
+.design-p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  text-align: center;
+  border-radius: 40px;
+  padding: 24px 12px;
+}
+.blue {
+  background-color: #1e3a8a;
+}
+
+.cyan {
+  background-color: #155e75;
+}
+
+.cyan-blue {
+  background-color: #075985;
+}
+
+@media (min-width: 900px) {
+  .desktop-visible {
+    display: block;
+    text-align: center;
+  }
+  .design-features-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: not-allowed;
+    align-items: center;
+  }
+  .design-img {
+    border-right: 3px solid #fff;
+  }
+  .design-features {
+    padding: 24px;
+  }
+}
