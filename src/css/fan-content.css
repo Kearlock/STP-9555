@@ -1,17 +1,14 @@
 .fan {
-  background-color: #0e7490;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  padding: 48px 16px 24px;
+  padding: 48px 0;
 }
 
 .fan-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
   display: flex;
   flex-direction: column;
   gap: 24px;
-  position: relative;
+  /* position: relative; */
 }
 
 /* ========== ЛІВИЙ КОНТЕЙНЕР ========== */
@@ -88,7 +85,7 @@
 }
 
 /* ===== ДЕСКТОП ===== */
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   .fan {
     padding: 64px 80px;
   }
